@@ -1,0 +1,119 @@
+@import "tailwindcss";
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* 🎥 Cinematic Cyberpunk Aesthetic */
+/* 🎥 Cyberpunk Aesthetic */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.8rem; }
+  p { font-size: 1rem; padding: 0 1rem; }
+  section { padding: 3rem 1rem; }
+}
+
+/* 🛸 Neon Button Hover (Mobile Fix) */
+@media (hover: hover) {
+  .neon-button:hover {
+    box-shadow: 0 0 20px #FF6F00;
+    transform: scale(1.05);
+  }
+}
+/* 🎞️ Subtle Film Grain Effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/filmgrain.png'); /* ✅ Corrected Path */
+  opacity: 0.03; /* 🔹 Lowered opacity for subtle effect */
+  z-index: -1;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
+
+/* 🔥 Glowing Neon Text Effects */
+.neon-text {
+  text-shadow: 0 0 8px rgba(0, 230, 255, 0.8), 0 0 16px rgba(0, 230, 255, 0.6);
+}
+
+/* 🕹️ HUD-Like Typography */
+h1, h2, h3 {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* 🟠 Cyberpunk Color Palette Usage */
+.primary-orange { color: #FF6F00; }
+.primary-blue { color: #00E6FF; }
+.primary-purple { color: #7B1FA2; }
+
+/* 🛸 Neon Button Hover Effects */
+.neon-button {
+  background-color: #FF6F00;
+  box-shadow: 0 0 10px #FF6F00;
+  transition: all 0.3s ease-in-out;
+}
+.neon-button:hover {
+  box-shadow: 0 0 20px #FF6F00;
+  transform: scale(1.05);
+}
+
+/* 🌌 Full-Screen Sections */
+section {
+  position: relative;
+  width: 100%; /* 🔹 Fix: Prevents overflow */
+  min-height: 100vh;
+  display: flex; /* 🔹 Fix: Ensures content is properly aligned */
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+
+/* 🌠 Light Leak Effect */
+.light-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 111, 0, 0.1), rgba(0, 230, 255, 0.05));
+  pointer-events: none;
+  opacity: 0.15;
+  animation: flicker 4s infinite alternate;
+}
+
+/* 🎞️ VHS Glitch Animation */
+@keyframes flicker {
+  0% { opacity: 0.1; }
+  100% { opacity: 0.25; }
+}
+
+/* 🔥 Custom Cursor Effect */
+.custom-cursor {
+  width: 15px;
+  height: 15px;
+  background: cyan;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.2s ease-out;
+}

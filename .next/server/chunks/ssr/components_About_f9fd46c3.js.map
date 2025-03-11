@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/raghavnimbalkar/Desktop/portfolio/my-portfolio/components/About.js"],"sourcesContent":["// components/About.js\n\"use client\";\n\nimport { motion } from \"framer-motion\";\n\nexport default function About() {\n  return (\n    <motion.section\n      id=\"about\"\n      className=\"min-h-screen flex flex-col items-center justify-center\"\n      initial={{ opacity: 0, y: 50 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.8 }}\n    >\n      <h2 className=\"text-3xl font-bold\">About Me</h2>\n      <p className=\"mt-4\">I am a software developer...</p>\n    </motion.section>\n  );\n}"],"names":[],"mappings":"AAAA,sBAAsB;;;;;AAGtB;AAFA;;;AAIe,SAAS;IACtB,qBACE,8OAAC,0LAAA,CAAA,SAAM,CAAC,OAAO;QACb,IAAG;QACH,WAAU;QACV,SAAS;YAAE,SAAS;YAAG,GAAG;QAAG;QAC7B,SAAS;YAAE,SAAS;YAAG,GAAG;QAAE;QAC5B,YAAY;YAAE,UAAU;QAAI;;0BAE5B,8OAAC;gBAAG,WAAU;0BAAqB;;;;;;0BACnC,8OAAC;gBAAE,WAAU;0BAAO;;;;;;;;;;;;AAG1B","debugId":null}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
