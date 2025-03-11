@@ -52,7 +52,7 @@ export default function About() {
         I craft **digital experiences** that bridge the gap between **technology, 
         gaming, music, and film.** My work blends **Web3, blockchain, AI, and 
         full-stack development**, driven by a love for futuristic, interactive 
-        aesthetics. I'm constantly pushing **boundaries to create immersive 
+        aesthetics. I&apos;m constantly pushing **boundaries to create immersive 
         projects** with **cinematic visuals and game-like interfaces.**
       </motion.p>
 

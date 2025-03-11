@@ -1,4 +1,3 @@
-// components/Footer.js
 "use client";
 
 import { motion } from "framer-motion";
@@ -19,7 +18,7 @@ export default function Footer() {
           <Link href="https://linkedin.com/in/yourlinkedin" className="text-cyan-400 hover:text-cyan-300 transition-all duration-300">LinkedIn</Link>
           <Link href="mailto:your.email@example.com" className="text-cyan-400 hover:text-cyan-300 transition-all duration-300">Email</Link>
         </div>
-        <p className="text-gray-400 text-sm">© 2025 Raghav's Portfolio. All rights reserved.</p>
+        <p className="text-gray-400 text-sm">© 2025 Raghav&apos;s Portfolio. All rights reserved.</p>
       </div>
     </motion.footer>
   );
