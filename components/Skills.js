@@ -2,8 +2,11 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  "JavaScript", "React", "Solidity", "Next.js", "Node.js", 
-  "MongoDB", "C++", "Blockchain", "Game Development", "UI/UX"
+  "C", "C++", "C#", "Java", "Python", "JavaScript", "TypeScript", 
+  "Next.js", "React", "Node.js", "Express.js", "MongoDB", "TailwindCSS", 
+  "CSS", "OpenGL", "GLSL", ".NET", "Ethereum", "Git", "Hyper", 
+  "Visual Studio", "Visual Studio Code", "Vim", "Godot", "Unreal Engine", 
+  "Blender", "Krita", "Aseprite", "FL Studio", "DaVinci Resolve"
 ];
 
 export default function Skills() {
