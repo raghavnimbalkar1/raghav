@@ -5,7 +5,7 @@ import Image from "next/image";
 const projects = [
   {
     title: "🚀 ChainTix - Blockchain Ticketing",
-    img: "/public/chaintix.png",
+    img: "/chaintix.png",
     description: "A blockchain-powered NFT ticketing platform that prevents ticket fraud and reselling.",
     link: "https://github.com/raghavnimbalkar1/ChainTix",
   },
@@ -23,13 +23,13 @@ const projects = [
   },
   {
     title: "📸 Raghav Nimbalkar || Showcase",
-    img: "/public/showcase.png",
+    img: "/showcase.png",
     description: "My Personal Showcase website where you can checkout my photography and videography work.",
     link: "raghavnimbalkarshowcase.vercel.app",
   },
   {
     title: "🎮 Raghav Nimbalkar",
-    img: "/public/portfolio.png",
+    img: "/portfolio.png",
     description: "My very own portfolio website",
     link: "www.raghavnimbalkar.xyz",
   },
