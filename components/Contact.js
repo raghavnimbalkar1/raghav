@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md"; // Import Gmail icon
+import Image from "next/image"; // Import Next.js Image component
 
 export default function Contact() {
   const contactLinks = [
@@ -58,10 +59,12 @@ export default function Contact() {
           >
             {/* Render the icon */}
             {typeof contact.logo === "string" ? (
-              <img
+              <Image
                 src={contact.logo}
                 alt={contact.platform}
-                className="w-12 h-12 mb-2"
+                width={48}
+                height={48}
+                className="mb-2"
               />
             ) : (
               contact.logo // Render the React icon directly
