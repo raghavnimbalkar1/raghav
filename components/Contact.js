@@ -4,28 +4,28 @@ import { MdEmail } from "react-icons/md"; // Import Gmail icon
 import Image from "next/image"; // Import Next.js Image component
 
 export default function Contact() {
-  const contactLinks = [
-    {
-      platform: "LinkedIn",
-      logo: "https://cdn-icons-png.flaticon.com/512/174/174857.png", // LinkedIn logo URL
-      link: "https://www.linkedin.com/in/raghavnimbalkar",
-    },
-    {
-      platform: "Instagram",
-      logo: "https://cdn-icons-png.flaticon.com/512/174/174855.png", // Instagram logo URL
-      link: "https://www.instagram.com/raghavvnimbalkar",
-    },
-    {
-      platform: "Twitter",
-      logo: "https://cdn-icons-png.flaticon.com/512/124/124021.png", // Twitter logo URL
-      link: "https://x.com/raghavnimbalkar",
-    },
-    {
-      platform: "Email",
-      logo: <MdEmail className="w-12 h-12 text-white" />, // Gmail icon
-      link: "mailto:raghav.nimbalkar@gmail.com",
-    },
-  ];
+const contactLinks = [
+  {
+    platform: "LinkedIn",
+    logo: <FaLinkedin className="w-12 h-12 text-white" />, // LinkedIn icon using React Icons
+    link: "https://www.linkedin.com/in/raghavnimbalkar",
+  },
+  {
+    platform: "Instagram",
+    logo: <FaInstagram className="w-12 h-12 text-white" />, // Instagram icon using React Icons
+    link: "https://www.instagram.com/raghavvnimbalkar",
+  },
+  {
+    platform: "Twitter",
+    logo: <FaTwitter className="w-12 h-12 text-white" />, // Twitter icon using React Icons
+    link: "https://x.com/raghavnimbalkar",
+  },
+  {
+    platform: "Email",
+    logo: <MdEmail className="w-12 h-12 text-white" />, // Gmail icon
+    link: "mailto:raghav.nimbalkar@gmail.com",
+  },
+];
 
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-6 overflow-hidden bg-black">
