@@ -1,9 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
+import { MdEmail } from "react-icons/md"; // Import Gmail icon
 
 export default function Contact() {
+  const contactLinks = [
+    {
+      platform: "LinkedIn",
+      logo: "https://cdn-icons-png.flaticon.com/512/174/174857.png", // LinkedIn logo URL
+      link: "https://www.linkedin.com/in/raghavnimbalkar",
+    },
+    {
+      platform: "Instagram",
+      logo: "https://cdn-icons-png.flaticon.com/512/174/174855.png", // Instagram logo URL
+      link: "https://www.instagram.com/raghavvnimbalkar",
+    },
+    {
+      platform: "Twitter",
+      logo: "https://cdn-icons-png.flaticon.com/512/124/124021.png", // Twitter logo URL
+      link: "https://x.com/raghavnimbalkar",
+    },
+    {
+      platform: "Email",
+      logo: <MdEmail className="w-12 h-12 text-white" />, // Gmail icon
+      link: "mailto:raghav.nimbalkar@gmail.com",
+    },
+  ];
+
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-6 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-6 overflow-hidden bg-black">
       {/* Background Glow */}
       <motion.div
         className="absolute top-1/3 left-1/4 w-96 h-96 bg-cyan-500 opacity-20 blur-3xl rounded-full"
@@ -21,17 +45,29 @@ export default function Contact() {
         Contact Me
       </motion.h2>
 
-      {/* Contact Links */}
-      <div className="mt-10 flex gap-6">
-        {["GitHub", "LinkedIn", "Email"].map((platform, index) => (
-          <motion.a
+      {/* Contact Cards */}
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
+        {contactLinks.map((contact, index) => (
+          <a
             key={index}
-            href="#"
-            className="px-6 py-3 bg-orange-500 text-black rounded-lg shadow-lg hover:shadow-orange-400 transition-transform duration-300"
-            whileHover={{ scale: 1.1 }}
+            href={contact.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-32 h-32 bg-black bg-opacity-75 border border-cyan-500 rounded-lg flex flex-col items-center justify-center p-4 shadow-lg hover:shadow-cyan-400 transition-all duration-300"
+            style={{ position: "relative", zIndex: 10 }} // Ensure cards are clickable
           >
-            {platform}
-          </motion.a>
+            {/* Render the icon */}
+            {typeof contact.logo === "string" ? (
+              <img
+                src={contact.logo}
+                alt={contact.platform}
+                className="w-12 h-12 mb-2"
+              />
+            ) : (
+              contact.logo // Render the React icon directly
+            )}
+            <p className="text-white text-sm font-medium">{contact.platform}</p>
+          </a>
         ))}
       </div>
     </section>
