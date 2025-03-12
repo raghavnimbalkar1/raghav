@@ -53,7 +53,6 @@ export default function About() {
       </motion.p>
 
       {/* Glitch Hover Button */}
-  
     </section>
   );
 }
