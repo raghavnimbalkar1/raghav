@@ -51,7 +51,7 @@ export default function Header() {
             <motion.a
               key={index}
               href={link.href}
-              className="text-white text-lg font-medium tracking-wider transition-colors hover:text-cyan-400 block md:inline"
+              className="text-white text-md font-medium tracking-wider transition-colors hover:text-cyan-400 block md:inline"
               whileHover={{ scale: 1.05 }}
             >
               {link.name}
