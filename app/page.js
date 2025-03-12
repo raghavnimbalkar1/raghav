@@ -25,12 +25,14 @@ export default function HomePage() {
       { threshold: 0.1 }
     );
 
-    sections.current.forEach((section) => {
+    const sectionRefs = sections.current; // Copy refs to a local variable
+
+    sectionRefs.forEach((section) => {
       if (section) observer.observe(section);
     });
 
     return () => {
-      sections.current.forEach((section) => {
+      sectionRefs.forEach((section) => {
         if (section) observer.unobserve(section);
       });
     };
@@ -83,4 +85,3 @@ export default function HomePage() {
     </div>
   );
 }
-
