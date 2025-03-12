@@ -49,7 +49,7 @@ export default function About() {
         transition={{ duration: 1.5, delay: 0.8 }}
         className="max-w-3xl text-lg text-gray-300 z-10 relative leading-relaxed tracking-wide scroll-fade-in-up scroll-delay-2"
       >
-        "I specialize in creating digital experiences that connect technology, gaming, music, and film. My work integrates Web3, blockchain, AI, and full-stack development, with a focus on innovative, interactive aesthetics. I’m passionate about exploring new possibilities to craft immersive projects, incorporating cinematic visuals and engaging interfaces, while constantly learning and evolving in the process."
+        &quot;I specialize in creating digital experiences that connect technology, gaming, music, and film. My work integrates Web3, blockchain, AI, and full-stack development, with a focus on innovative, interactive aesthetics. I’m passionate about exploring new possibilities to craft immersive projects, incorporating cinematic visuals and engaging interfaces, while constantly learning and evolving in the process.&quot;
       </motion.p>
 
       {/* Glitch Hover Button */}
