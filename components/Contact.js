@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md"; // Import Gmail icon
+import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa"; // Import social media icons
 import Image from "next/image"; // Import Next.js Image component
 
 export default function Contact() {
