@@ -39,8 +39,8 @@ export default function Header() {
           ☰
         </button>
 
-        {/* Navigation */}
-        <nav className={`md:flex space-x-6 ${menuOpen ? "block" : "hidden"} md:block`}>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex space-x-6">
           {[
             { name: "About", href: "#about" },
             { name: "Projects", href: "#projects" },
@@ -51,13 +51,39 @@ export default function Header() {
             <motion.a
               key={index}
               href={link.href}
-              className="text-white text-md font-medium tracking-wider transition-colors hover:text-cyan-400 block md:inline"
-              whileHover={{ scale: 1.05 }}
+              className="text-white text-md font-medium tracking-wider transition-colors hover:text-cyan-400"
+              whileHover={{ scale: 1 }} // Removed hover scaling
             >
               {link.name}
             </motion.a>
           ))}
         </nav>
+
+        {/* Mobile Dropdown Menu */}
+        <div
+          className={`absolute top-full right-0 bg-black bg-opacity-90 text-white w-48 shadow-lg transform transition-all duration-300 ease-in-out md:hidden ${
+            menuOpen ? "opacity-100 scale-100 z-50" : "opacity-0 scale-95 pointer-events-none"
+          }`}
+        >
+          <div className="flex flex-col space-y-2 p-4">
+            {[
+              { name: "About", href: "#about" },
+              { name: "Projects", href: "#projects" },
+              { name: "Skills", href: "#skills" },
+              { name: "Experience", href: "#work" },
+              { name: "Contact", href: "#contact" },
+            ].map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                className="text-white text-md font-medium tracking-wider transition-colors hover:text-cyan-400"
+                onClick={() => setMenuOpen(false)} // Close menu on click
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </motion.header>
   );
