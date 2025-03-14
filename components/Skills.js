@@ -6,7 +6,7 @@ const skills = [
   "Next.js", "React", "Node.js", "Express.js", "MongoDB", "TailwindCSS", 
   "CSS", "OpenGL", "GLSL", ".NET", "Ethereum", "Git", "Hyper", 
   "Visual Studio", "Visual Studio Code", "Vim", "Godot", "Unreal Engine", 
-  "Blender", "Krita", "Aseprite", "FL Studio", "DaVinci Resolve"
+  "Blender", "Krita", "Aseprite", "FL Studio", "Ableton", "DaVinci Resolve"
 ];
 
 export default function Skills() {
