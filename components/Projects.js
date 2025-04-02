@@ -10,6 +10,12 @@ const projects = [
     link: "https://github.com/raghavnimbalkar1/ChainTix",
   },
   {
+    title: "👨🏻‍⚕️ Deep Diagnose - AI ChatBot Medicinal Analyst",
+    img: "/deepdiagnose.png",
+    description: "An AI chatbot which helps patients understand their medical reports better and also get their queries solved",
+    link: "https://deepdiagnose-production.up.railway.app/",
+  },
+  {
     title: "🎮 Echoes of the Lost - 2D Game",
     img: "/projects/echoes.png",
     description: "An immersive post-apocalyptic survival game built in Godot with pixel art and unique storytelling.",
